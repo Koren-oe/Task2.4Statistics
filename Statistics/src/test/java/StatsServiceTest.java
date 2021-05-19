@@ -1,13 +1,13 @@
-package ru.netology.statistics;
-
 import org.junit.jupiter.api.Test;
+import ru.netology.stats.StatsService;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class StatisticsServiceTest {
+class StatsServiceTest {
     @Test
     void calculateSum() {
-        StatisticsService service = new StatisticsService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 180;
@@ -19,7 +19,7 @@ class StatisticsServiceTest {
 
     @Test
     void calculateAverage() {
-        StatisticsService service = new StatisticsService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 15;
@@ -31,7 +31,7 @@ class StatisticsServiceTest {
 
     @Test
     void calculateMaxSalesMonth() {
-        StatisticsService service = new StatisticsService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 8;
@@ -43,7 +43,7 @@ class StatisticsServiceTest {
 
     @Test
     void calculateMinSalesMonth() {
-        StatisticsService service = new StatisticsService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 9;
@@ -55,7 +55,7 @@ class StatisticsServiceTest {
 
     @Test
     void calculateSalesMinAverage() {
-        StatisticsService service = new StatisticsService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
@@ -67,7 +67,7 @@ class StatisticsServiceTest {
 
     @Test
     void calculateSalesMaxAverage() {
-        StatisticsService service = new StatisticsService();
+        StatsService service = new StatsService();
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long expected = 5;
